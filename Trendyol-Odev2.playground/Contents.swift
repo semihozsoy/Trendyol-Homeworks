@@ -135,6 +135,5 @@ func getDifference(n:Double)->Double {
 
 getDifference(n: 100)
 
-
-
+// Question : How can do this function more effective for complexity phases ?
 
