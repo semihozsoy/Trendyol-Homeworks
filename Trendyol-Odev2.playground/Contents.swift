@@ -135,6 +135,6 @@ func getDifference(n:Double)->Double {
 
 getDifference(n: 100)
 
-
+//pull request denemesi
 
 
