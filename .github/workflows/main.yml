@@ -23,7 +23,7 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         uses: Ilshidur/action-slack@2.0.2
         with:
-          args: "*{{ EVENT_PAYLOAD.sender.login }}* has opened new pull request. 🚀🎉👻\n\n {{ EVENT_PAYLOAD.repository.html_url }}"
+          args: "*{{ EVENT_PAYLOAD.sender.login }}* has opened new pull request. 🚀🎉👻\n {{ EVENT_PAYLOAD.repository.html_url }}"
  
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
