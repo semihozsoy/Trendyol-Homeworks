@@ -10,7 +10,6 @@ if let nests its scope, and does not require anything special of it. It can retu
 
 
 
-
 //ODEV2:Bir Oyun senaryosu  için dönme açıları ile ilgili bir switch case yapısı deneyiniz
 // Bu soru için sadece enum kullanımı
 
