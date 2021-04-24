@@ -41,7 +41,7 @@ func removeString(text:String, repTime : Int) -> String{
  string = "merhaba nasılsınız . iyiyim siz nasılsınız . bende iyiyim ."
 
  */
-
+/*
 var cumle = "merhaba nasılsınız . iyiyim siz nasılsınız . bende iyiyim ."
 let splited = cumle.split(separator: " ").map({String($0)})
 var repTime=[String:Int]()
@@ -56,11 +56,11 @@ for c in splited {
 
 print(repTime)
 
-
+*/
 
 
 // Project Euler 4.soru
-
+/*
 var sayi : Int
 var result : Int = 0
 
@@ -92,13 +92,13 @@ for i in 100...999 {
 
 polindrom()
 
-
+*/
 
 
 
 //Project Euler 5.soru
 
-
+/*
 
 func divideNumber(number:Int)->Bool{
 for j in 2...20 {
@@ -115,9 +115,9 @@ while !divideNumber(number:currentNumber){
     currentNumber += 1
 }
 print("number: ", currentNumber)
+*/
 
-
-
+/*
 //Project Euler 6.soru
 
 
@@ -135,6 +135,6 @@ func getDifference(n:Double)->Double {
 
 getDifference(n: 100)
 
-
+*/
 
 
