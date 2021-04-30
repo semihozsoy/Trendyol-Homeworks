@@ -4,9 +4,8 @@ import Foundation
 // By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
 //What is the 10 001st prime number?
 
-
 func listPrimeNumbers(){
-
+    
         var isPrime = false
         var number = UInt8.max
         var primeArr : [Int] = []
@@ -21,22 +20,13 @@ func listPrimeNumbers(){
                 isPrime = true
                 print("Found \(j)")
                 break
-               
             }
-
         }
-            /*if number % i == 0 {
-                isPrime = true
-                break
-            }*/
-
             if isPrime == true {
                 number
             }
-
         }
     }
-
 listPrimeNumbers()
 
 //Problem 8
@@ -60,12 +50,10 @@ func largestProduct(numDigits : Int) -> Int {
         for j in  j ..< i + numDigits {
             number *= digits[j]
         }
-
         if number > maxNumber {
             maxNumber = number
         }
     }
-
     return maxNumber
 }
 
