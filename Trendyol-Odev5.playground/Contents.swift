@@ -15,7 +15,7 @@ func listPrimeNumbers(){
 
         for j in  primeArr {
             
-            if j == primeArr[1001] && number % i == 0  {
+            if j == primeArr[10001] && number % i == 0  {
                 isFound = true
                 isPrime = true
                 print("Found \(j)")
