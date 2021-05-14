@@ -16,6 +16,8 @@
 		116F5A73264DB027003685A7 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116F5A72264DB027003685A7 /* AboutViewController.swift */; };
 		116F5A78264DC42F003685A7 /* CookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116F5A77264DC42F003685A7 /* CookListViewController.swift */; };
 		116F5A7A264DC454003685A7 /* CookCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116F5A79264DC454003685A7 /* CookCreateViewController.swift */; };
+		116F5AA0264DCBAD003685A7 /* TabbarCoredataAll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 116F5A9E264DCBAD003685A7 /* TabbarCoredataAll.xcdatamodeld */; };
+		116F5AA4264E8FB0003685A7 /* CookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116F5AA3264E8FAF003685A7 /* CookTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		116F5A72264DB027003685A7 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		116F5A77264DC42F003685A7 /* CookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookListViewController.swift; sourceTree = "<group>"; };
 		116F5A79264DC454003685A7 /* CookCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookCreateViewController.swift; sourceTree = "<group>"; };
+		116F5A9F264DCBAD003685A7 /* TabbarCoredataAll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TabbarCoredataAll.xcdatamodel; sourceTree = "<group>"; };
+		116F5AA3264E8FAF003685A7 /* CookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				116F5A76264DC414003685A7 /* Controllers */,
+				116F5A9E264DCBAD003685A7 /* TabbarCoredataAll.xcdatamodeld */,
+				116F5AA3264E8FAF003685A7 /* CookTableViewCell.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -171,10 +177,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				116F5A63264DA866003685A7 /* ViewController.swift in Sources */,
+				116F5AA4264E8FB0003685A7 /* CookTableViewCell.swift in Sources */,
 				116F5A5F264DA866003685A7 /* AppDelegate.swift in Sources */,
 				116F5A7A264DC454003685A7 /* CookCreateViewController.swift in Sources */,
 				116F5A73264DB027003685A7 /* AboutViewController.swift in Sources */,
 				116F5A61264DA866003685A7 /* SceneDelegate.swift in Sources */,
+				116F5AA0264DCBAD003685A7 /* TabbarCoredataAll.xcdatamodeld in Sources */,
 				116F5A78264DC42F003685A7 /* CookListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +385,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		116F5A9E264DCBAD003685A7 /* TabbarCoredataAll.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				116F5A9F264DCBAD003685A7 /* TabbarCoredataAll.xcdatamodel */,
+			);
+			currentVersion = 116F5A9F264DCBAD003685A7 /* TabbarCoredataAll.xcdatamodel */;
+			path = TabbarCoredataAll.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 116F5A53264DA866003685A7 /* Project object */;
 }
