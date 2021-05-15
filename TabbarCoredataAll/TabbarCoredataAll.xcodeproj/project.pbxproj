@@ -18,6 +18,7 @@
 		116F5A7A264DC454003685A7 /* CookCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116F5A79264DC454003685A7 /* CookCreateViewController.swift */; };
 		116F5AA0264DCBAD003685A7 /* TabbarCoredataAll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 116F5A9E264DCBAD003685A7 /* TabbarCoredataAll.xcdatamodeld */; };
 		116F5AA4264E8FB0003685A7 /* CookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116F5AA3264E8FAF003685A7 /* CookTableViewCell.swift */; };
+		116F5AD9264FE54F003685A7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116F5AD8264FE54F003685A7 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		116F5A79264DC454003685A7 /* CookCreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookCreateViewController.swift; sourceTree = "<group>"; };
 		116F5A9F264DCBAD003685A7 /* TabbarCoredataAll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TabbarCoredataAll.xcdatamodel; sourceTree = "<group>"; };
 		116F5AA3264E8FAF003685A7 /* CookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookTableViewCell.swift; sourceTree = "<group>"; };
+		116F5AD8264FE54F003685A7 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				116F5A72264DB027003685A7 /* AboutViewController.swift */,
 				116F5A62264DA866003685A7 /* ViewController.swift */,
+				116F5AD8264FE54F003685A7 /* MainTabBarController.swift */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				116F5A63264DA866003685A7 /* ViewController.swift in Sources */,
 				116F5AA4264E8FB0003685A7 /* CookTableViewCell.swift in Sources */,
+				116F5AD9264FE54F003685A7 /* MainTabBarController.swift in Sources */,
 				116F5A5F264DA866003685A7 /* AppDelegate.swift in Sources */,
 				116F5A7A264DC454003685A7 /* CookCreateViewController.swift in Sources */,
 				116F5A73264DB027003685A7 /* AboutViewController.swift in Sources */,
