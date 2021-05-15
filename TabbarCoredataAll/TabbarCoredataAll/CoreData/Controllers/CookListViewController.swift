@@ -22,10 +22,10 @@ class CookListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        getCooks()
+        getCooksandImages()
     }
     
-    private func getCooks(){
+    private func getCooksandImages(){
         cookNames.removeAll()
         cookImages.removeAll()
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
@@ -54,6 +54,7 @@ class CookListViewController: UIViewController {
 }
 
 extension CookListViewController:UITableViewDelegate,UITableViewDataSource{
+  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cookNames.count
     }
@@ -66,5 +67,32 @@ extension CookListViewController:UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let delete = UIContextualAction(style: .normal, title: "Delete") {(action,view,completionHandler)in
+            
+            let alert = UIAlertController(title: "Deletion", message: "Do you really want to delete this item?", preferredStyle: UIAlertController.Style.alert)
+            let okButton = UIAlertAction(title: "Yes", style: .default) { completionHandler in
+                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+                let context = appDelegate.persistentContainer.viewContext
+                let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Cook")
+                let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+                
+                do {
+                       try context.execute(deleteRequest)
+                    self.cookNames.remove(at: indexPath.row )
+                    self.cookImages.remove(at: indexPath.row)
+                    self.tableView.reloadData()
+                     try context.save()
+                   } catch let error as NSError {
+                       print(error.localizedDescription)
+                   }
+            }
+            alert.addAction(okButton)
+            self.present(alert, animated: true, completion: nil)
+        }
+        let swipe = UISwipeActionsConfiguration(actions: [delete])
+        return swipe
+    }
     
+
 }
