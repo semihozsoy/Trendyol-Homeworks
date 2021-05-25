@@ -15,6 +15,7 @@ class CookListViewController: UIViewController {
   
     var cookNames = [String]()
     var cookImages = [Data]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
